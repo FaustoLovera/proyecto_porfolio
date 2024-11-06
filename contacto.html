@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
     <header>
@@ -24,35 +26,43 @@
 
     <h2 class="centro">Contacto</h2>
 
-    <section class="contact"></section>
-        
-        <form action="mailto:tuemail@example.com" method="post" enctype="text/plain">
+    <section class="contact">
+
+        <!-- Contenedor para mensajes de error -->
+        <div id="error-message" style="color: red; display: none; margin-bottom: 20px;"></div>
+
+        <form id="contact-form" enctype="text/plain">
             <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name">
+
             <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email">
+
             <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea id="message" name="message"></textarea>
+
             <button type="submit">Enviar</button>
         </form>
-        
+
     </section>
 
+    <p class="margin">Correo: <a href="mailto:fausto.lovera17@gmail.com">fausto.lovera17@gmail.com</a></p>
+    <p class="margin">Teléfono: +54 9 2474 564357</p>
+    <p class="margin"><a href="https://www.linkedin.com/in/faustolovera" target="_blank">LinkedIn</a></p>
 
-            <p class="margin">Correo: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=fausto.lovera17@gmail.com" target="_blank">fausto.lovera17@gmail.com</a></p>
-            <p class="margin">Teléfono: +54 9 2474 564357</p>
-            <p class="margin"><a href="https://www.linkedin.com/in/faustolovera" target="_blank">LinkedIn</a></p>
+    <footer>
+        <p>&copy; 2024 Fausto. Derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/faustolovera__" target="_blank" title="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/faustolovera" target="_blank" title="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/FausLovera" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/FaustoLovera" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
 
-
-        <footer>
-            <p>&copy; 2024 Fausto. Derechos reservados.</p>
-            <div class="social-links">
-                <a href="https://www.instagram.com/faustolovera__" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/faustolovera" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://twitter.com/FausLovera" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://github.com/FaustoLovera" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            </div>
-        </footer>
-
+    <script src="js/script.js"></script>
 </body>
+
 </html>

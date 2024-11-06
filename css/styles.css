@@ -8,7 +8,7 @@ html, body {
     flex-direction: column;
 }
 
-body {
+.dark {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -245,4 +245,13 @@ footer {
 
 .porfolio {
     flex: 1;
+}
+
+#error-message {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
 }
