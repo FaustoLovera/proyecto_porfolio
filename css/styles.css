@@ -8,7 +8,7 @@ html, body {
     flex-direction: column;
 }
 
-.dark {
+body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
