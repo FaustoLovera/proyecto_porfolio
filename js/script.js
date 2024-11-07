@@ -1,37 +1,29 @@
-// script.js
 
-// Función para validar el formulario
 function validarFormulario(event) {
-    // Prevenir que el formulario se envíe
+    //  Esta función lo que hace es prevenir que el formulario se envíe normalmente.
     event.preventDefault();
 
-    // Obtener el contenedor de los mensajes de error
+    // Obtener el contenedor de los mensajes de error dependiendo el casillero incompleto
     const errorMessage = document.getElementById('error-message');
-    // Limpiar los mensajes de error previos
+    // Limpia los mensajes de error
     errorMessage.textContent = '';
 
-    // Obtener los valores del formulario
     const nombre = document.getElementById('name').value.trim();
     const email = document.getElementById('email').value.trim();
     const mensaje = document.getElementById('message').value.trim();
 
     let errores = [];
     
-
-
-    // Validar el campo de nombre
     if (nombre === '') {
         errores.push('El nombre es obligatorio.');
     }
 
-    // Validar el campo de correo electrónico
     if (email === '') {
         errores.push('El correo electrónico es obligatorio.');
     } else if (!/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
         errores.push('Por favor ingrese un correo electrónico válido.');
     }
 
-    // Validar el campo de mensaje
     if (mensaje === '') {
         errores.push('El mensaje no puede estar vacío.');
     }
