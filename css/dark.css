@@ -1,0 +1,6 @@
+
+*[data-theme="dark"] {
+    /*aca metes los estilos del modo oscuro*/
+    background-color: black;
+    color: white;
+}

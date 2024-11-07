@@ -44,3 +44,4 @@ function validarFormulario(event) {
 
 // Asignar el evento de submit al formulario
 document.getElementById('contact-form').addEventListener('submit', validarFormulario);
+
