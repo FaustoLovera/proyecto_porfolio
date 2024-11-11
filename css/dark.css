@@ -1,6 +1,12 @@
 
 *[data-theme="dark"] {
     /*aca metes los estilos del modo oscuro*/
-    background-color: black;
+    background-color: #000000;
     color: white;
+}
+.services {
+    color: black;
+}
+.project p {
+    color: black;
 }

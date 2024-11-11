@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre mí</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body data-theme="dark">
 
     <header>
         <nav>
@@ -18,6 +19,7 @@
                 <li><a href="curriculum.html">Curriculum</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="" onclick="cambiarDarkMode()">MODO OSCURO</a></li>
             </ul>
         </nav>
     </header>
@@ -47,6 +49,7 @@
             <a href="https://github.com/FaustoLovera" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
         </div>
     </footer>
-    
+
+    <script src="js/darkMode.js"></script>
 </body>
 </html>
