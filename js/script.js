@@ -1,4 +1,3 @@
-
 function validarFormulario(event) {
     
     event.preventDefault();
@@ -38,4 +37,3 @@ function validarFormulario(event) {
 }
 
 document.getElementById('contact-form').addEventListener('submit', validarFormulario);
-
